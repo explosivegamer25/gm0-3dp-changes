@@ -61,6 +61,7 @@ rst_epilog = """
 .. |gm2| replace:: Game Manual Part 2
 .. |cm| replace:: Competition Manual
 .. |EN| replace:: Engineering Notebook
+.. |EP| replace:: Engineering Portfolio
 """
 
 # Disable following anchors in URLs for linkcheck.
