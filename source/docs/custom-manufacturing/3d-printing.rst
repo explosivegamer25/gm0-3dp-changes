@@ -30,6 +30,47 @@ Disadvantages of 3D Printing
 - Large and thick prints can take a long time (overnight) to print and can run the risk of failure.
 - 3D printing can end up quite expensive, though filament can be found for a reasonable price on online vendors such as Amazon.
 
+3D Printing Design Guide
+------------------------
+
+Here is a quick guide on designing 3D printed parts that we hope is helpful for teams who may be unfamiliar with 3D parts.
+
+The first consideration when designing 3D printed parts is print orientation. This refers to the side that contacts the print bed. Preferably, the part should have a flat bottom to maximize contact with the print bed.
+
+.. tip:: Maximizing contact with the print bed will make sure the part doesn't delaminate or warp from the bed and increase print quality.
+
+If it is impossible for the part to have a flat side to print on, a simple solution is to split the part into multiple parts along a plane. For instance, the gearbox plate below didn't have a flat side to print on, so it was split in half. The part was later sandwiched with numerous screws and plastic glue. If this plate was printed as one part instead of split in half, support would have to be used to create all of the necessary holes. Parts that use no support material make sure that the least amount of plastic is wasted.
+
+.. image:: images/3d-printing/2-piece-gearbox.jpg
+   :alt: A 3D printed gearbox, printed in 2 parts, cut along a plane
+   :scale: 25%
+
+.. tip:: Don't chamfer or round anything on the perimeter of the first layer on the bottom face of the part. Chamfering or rounding will increase the chances of the part warping, especially on unheated print plates.
+
+Draft Angle
+^^^^^^^^^^^
+
+Draft angle refers to the overhang angle between the part side and normal vector from the print plate. The maximum draft angle refers to the maximum angle the printer can print without support material and is based on the printer, print settings (notably speed, temperature and cooling) and filament type. When trying to decrease support material, consider every overhang angle and make sure it is within the maximum draft angle. Staying within the maximum draft angle will also decrease the chances of part warping.
+
+Stress Vectors
+^^^^^^^^^^^^^^
+
+Perhaps the most important consideration is stress vectors. 3D printed parts are inherently stronger on two axes and weaker on one axis. The weaker axis comes from the layering action that defines FDM 3D printing. A common fix to this is to simply increase the print temperature up to a certain limit until it starts decreasing print quality, but the weaker axis can be resolved by again splitting up into multiple parts. The point to get across is to try to increase strength by optimizing sections of the part on the plane they are being printed on. For instance, this assembly below was responsible for hanging the entire robot, so it had to be the maximum strength possible for a 3D printed part.
+
+.. tip:: It might seem counterintuitive to split up a part into multiple parts to increase strength, but there is a logic behind it.
+
+The part could have been easily printed as a single part, but it would be fairly weak when stresses are exerted in the upward direction. Splitting the part and creating new flat surfaces to print on will strengthen each axis. *If one small part failed, the robot might still be able to somewhat function.* This would be preferable to the entire piece failing at once. In this example, the side pieces were printed as separate parts on a complementary axis to strengthen the assembly.
+
+.. image:: images/3d-printing/printing-multipart.jpg
+   :alt: A multipart assembly 3D printing
+   :scale: 25%
+
+.. image:: images/3d-printing/assembled-multipart.jpg
+   :alt: An assembled version of what was printing in the previous image
+   :scale: 25%
+
+This assembly is a good example of considering part orientation, draft angles, and stress vectors in each part of the design. Complex parts can be made strong and without any support by simply splitting it up in the right way.
+
 Material Selection
 ------------------
 
@@ -89,23 +130,48 @@ In addition to the filaments mentioned in the tip above, we recommend using most
 Common Filaments
 ----------------
 
++-------+------------------+-----------+-----------------------------+----------+------------+----------------------------+
+|       | Tensile Strength | Impact    | HDT (MPa)                   | Flex.    | Density    | Print Temp (\ |deg|\ C)    |
+|       +--------+---------+           +--------------+--------------+ Mod.     |            +-----------+----------------+
+|       | XY     | Z       |           | 0.45         | 1.8          |          |            | Bed       | Nozzle         |
++=======+========+=========+===========+==============+==============+==========+============+===========+================+
+| PLA   | 55 MPa | 45 MPa  | 5 kJ/m²   | 57\ |deg|\ C | 52\ |deg|\ C | 2400 MPa | 1.24 g/cm³ | XX-XX     | XXX-XXX        |
++-------+--------+---------+-----------+--------------+--------------+----------+------------+-----------+----------------+
+| PETG  | 41 MPa | 36 MPa  | 3.9 kJ/m² | 68\ |deg|\ C | 65\ |deg|\ C | 1700 MPa | 1.25 g/cm³ | XX-XX     | XXX-XXX        |
++-------+--------+---------+-----------+--------------+--------------+----------+------------+-----------+----------------+
+| ABS   | 39 MPa | 35 MPa  | 30 kJ/m²  | 87\ |deg|\ C | 75\ |deg|\ C | 1700 MPa | 1.05 g/cm³ | XX-XX     | XXX-XXX        |
++-------+--------+---------+-----------+--------------+--------------+----------+------------+-----------+----------------+
+| TPU   | 41 MPa | 24 MPa  | n/a       | 70\ |deg|\ C | 50\ |deg|\ C | n/a      | 1.25 g/cm³ | XX-XX     | XXX-XXX        |
++-------+--------+---------+-----------+--------------+--------------+----------+------------+-----------+----------------+
+
+.. csv-table::
+    :header: "Material", "Tensile XY", "Tensile Z", "Impact", "Heat Deflection (0.45 MPa)", "Heat Deflection (1.8 MPa)", "Flexural Modulus", "Density"
+    :widths: 10, 14, 12, 14, 15, 15, 14, 15
+
+    "ASA", "41 MPa", "35 MPa", "40 kJ/m^2", "90\ |deg|\ C", "85\ |deg|\ C", "2060 MPa", "1.05 g/cm^3"
+    "PA6", "82 MPa", "18 MPa", "18 kJ/m^2", "180\ |deg|\ C", "165\ |deg|\ C", "7000 MPa", "1.16 g/cm^3"
+    "PA12", "78 MPa", "30 MPa", "16 kJ/m^2", "170\ |deg|\ C", "160\ |deg|\ C", "4000 MPa", "1.06 g/cm^3"
+    "PA11", "64 MPa", "no data", "17 kJ/m^2", "190\ |deg|\ C", "150\ |deg|\ C", "6000 MPa", "1.11 g/cm^3"
+    "PAHT", "80 MPa", "50 MPa", "9 kJ/m^2", "210\ |deg|\ C", "200\ |deg|\ C", "9520 MPa", "1.08 g/cm^3"
+    "PPA", "101 MPa", "22 MPa", "8 kJ/m^2", "227\ |deg|\ C", "N/A\ |deg|\ C", "9860 MPa", "1.25 g/cm^3"
+    "PC_Stiff", "70 MPa", "53 MPa", "4 kJ/m^2", "110\ |deg|\ C", "105\ |deg|\ C", "2650 MPa", "1.2 g/cm^3"
+    "PC_ABS", "58 MPa", "30 MPa", "120 kJ/m^2", "110\ |deg|\ C", "105\ |deg|\ C", "2000 MPa", "1.24 g/cm^3"
+    "PC_CF", "70 MPa", "no data", "17 kJ/m^2", "115\ |deg|\ C", "105\ |deg|\ C", "4200 MPa", "1.22 g/cm^3"
+    "PET_CF", "70 MPa", "35 MPa", "8 kJ/m^2", "205\ |deg|\ C", "180\ |deg|\ C", "5000 MPa", "1.24 g/cm^3"
+
+
+"PCTG", "50 MPa", "40 MPa", "10 kJ/m^2", "75\ |deg|\ C", "70\ |deg|\ C", "2040 MPa", "1.21 g/cm^3"
+"TPE_General", "15-30 MPa", "22 MPa", "N/A kJ/m^2", "N/A \ |deg|\ C", "N/A \ |deg|\ C", "N/A  MPa", "1.05-1.15 g/cm^3"
+"PP", "35 MPa", "35 MPa", "65 kJ/m^2", "80\ |deg|\ C", "65\ |deg|\ C", "800 MPa", "0.9 g/cm^3"
+"PEEK", "100 MPa", "15 MPa", "6 kJ/m^2", "140\ |deg|\ C", "n/a", "2700 MPa", "1.3 g/cm^3"
+"PEKK", "105 MPa", "30 MPa", "15 kJ/m^2", "150\ |deg|\ C", "n/a", "2680 MPa", "1.27 g/cm^3"
+"PEI_1010", "82 MPa", "29 MPa", "2 kJ/m^2", "208\ |deg|\ C", "n/a", "2150 MPa", "1.27 g/cm^3"
+"TPI", "72 MPa", "19 MPa", "n/a", "237\ |deg|\ C", "n/a\ |deg|\ C", "2150 MPa", "1.27 g/cm^3"
+
 PLA (Polylactic Acid)
 ^^^^^^^^^^^^^^^^^^^^^
 
 PLA is the most common printing plastic due to low cost and ease of printing. Strengths: Stiff, reasonably strong, easy to print, dirt cheap, and has good layer adhesion. Weaknesses, PLA has poor heat resistance, high creep even under small loads, and brittleness.
-
-- PLA hotend temperatures range from 190\ |deg|-230\ |deg| C
-- PLA bed temperatures range from 20\ |deg|-60\ |deg| C, but a heated bed isn't strictly required for PLA
-
-Mechanical properties:
-
-- Tensile strength XY (pulling apart, strong direction) = 55 MPa
-- Tensile strength Z (pulling apart, weak direction) = 45 MPa
-- Impact strength (toughness) = 5 kJ/m2
-- Heat deflection temperature (0.45MPa, lower load) = 57ºC
-- Heat deflection temperature (1.8MPa, higher load) = 52ºC
-- Flexural modulus XY (stiffness) = 2400 MPa
-- Density = 1.24 g/cm3
 
 PLA-CF/GF – extremely brittle and actually weaker than regular PLA. Do not recommend.
 
@@ -113,8 +179,6 @@ PETG (Polyethylene Terephthalate Glycol)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 PETG is a glycol-modified PET to allow it to print easier. Despite being in the PET family, IT IS NOT RECYCLEABLE! Strengths: higher temperature resistance than PLA, is less brittle, low creep under small loads, dirt cheap, and good layer adhesion. Weaknesses: it’s slightly harder to print and is less stiff and strong.
-
-Mechanical properties:
 
 - Tensile strength XY = 41 MPa
 - Tensile strength Z = 36 MPa
@@ -403,7 +467,6 @@ Mechanical properties:
 - Flexural modulus XY = 2680 MPa
 - Density = 1.27 g/cm^3
 
-
 PEI (Polyetherimide)
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -439,44 +502,3 @@ Mechanical properties:
 - Density = 1.27 g/cm3
 
 WE TAKE NO RESPONSIBILITY IN ANY PERSONAL HARM THAT MAY COME DUE TO THE USE OF THIS INFORMATION AS THE HOLY TRUTH OF THE UNIVERSE.
-
-3D Printing Design Guide
-------------------------
-
-Here is a quick guide on designing 3D printed parts that we hope is helpful for teams who may be unfamiliar with 3D parts.
-
-The first consideration when designing 3D printed parts is print orientation. This refers to the side that contacts the print bed. Preferably, the part should have a flat bottom to maximize contact with the print bed.
-
-.. tip:: Maximizing contact with the print bed will make sure the part doesn't delaminate or warp from the bed and increase print quality.
-
-If it is impossible for the part to have a flat side to print on, a simple solution is to split the part into multiple parts along a plane. For instance, the gearbox plate below didn't have a flat side to print on, so it was split in half. The part was later sandwiched with numerous screws and plastic glue. If this plate was printed as one part instead of split in half, support would have to be used to create all of the necessary holes. Parts that use no support material make sure that the least amount of plastic is wasted.
-
-.. image:: images/3d-printing/2-piece-gearbox.jpg
-   :alt: A 3D printed gearbox, printed in 2 parts, cut along a plane
-   :scale: 25%
-
-.. tip:: Don't chamfer or round anything on the perimeter of the first layer on the bottom face of the part. Chamfering or rounding will increase the chances of the part warping, especially on unheated print plates.
-
-Draft Angle
-^^^^^^^^^^^
-
-Draft angle refers to the overhang angle between the part side and normal vector from the print plate. The maximum draft angle refers to the maximum angle the printer can print without support material and is based on the printer, print settings (notably speed, temperature and cooling) and filament type. When trying to decrease support material, consider every overhang angle and make sure it is within the maximum draft angle. Staying within the maximum draft angle will also decrease the chances of part warping.
-
-Stress Vectors
-^^^^^^^^^^^^^^
-
-Perhaps the most important consideration is stress vectors. 3D printed parts are inherently stronger on two axes and weaker on one axis. The weaker axis comes from the layering action that defines FDM 3D printing. A common fix to this is to simply increase the print temperature up to a certain limit until it starts decreasing print quality, but the weaker axis can be resolved by again splitting up into multiple parts. The point to get across is to try to increase strength by optimizing sections of the part on the plane they are being printed on. For instance, this assembly below was responsible for hanging the entire robot, so it had to be the maximum strength possible for a 3D printed part.
-
-.. tip:: It might seem counterintuitive to split up a part into multiple parts to increase strength, but there is a logic behind it.
-
-The part could have been easily printed as a single part, but it would be fairly weak when stresses are exerted in the upward direction. Splitting the part and creating new flat surfaces to print on will strengthen each axis. *If one small part failed, the robot might still be able to somewhat function.* This would be preferable to the entire piece failing at once. In this example, the side pieces were printed as separate parts on a complementary axis to strengthen the assembly.
-
-.. image:: images/3d-printing/printing-multipart.jpg
-   :alt: A multipart assembly 3D printing
-   :scale: 25%
-
-.. image:: images/3d-printing/assembled-multipart.jpg
-   :alt: An assembled version of what was printing in the previous image
-   :scale: 25%
-
-This assembly is a good example of considering part orientation, draft angles, and stress vectors in each part of the design. Complex parts can be made strong and without any support by simply splitting it up in the right way.
