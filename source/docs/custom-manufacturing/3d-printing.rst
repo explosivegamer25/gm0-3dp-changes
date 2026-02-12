@@ -74,11 +74,11 @@ This assembly is a good example of considering part orientation, draft angles, a
 Material Selection
 ------------------
 
+.. warning:: All filaments decompose at high temperatures and release potentially harmful fumes. Some byproducts are more harmful than others. Additionally, CF and GF filaments release microscopic fibers that can collect in your lungs. While filaments like Delrin and ABS are the worst and require special HEPA filters and sealed enclosures, you should still print all filaments in a well-ventilated area!!
+
 For the purposes of FTC, PLA and PETG are all you need about 90% of the time. Everything else in here is for reference if you need very specific properties or are looking into other projects. Though we do recommend swapping your PETG with PCTG.
 
-- On 3D prints, orientation matters. This is because as the printer stacks layers, they do not adhere perfectly, and there are gaps between extrusion lines. This makes it so that vertically printed objects are far weaker than objects printed flat on the print bed.
-
-.. warning:: All filaments decompose at high temperatures and release potentially harmful fumes. Some byproducts are more harmful than others. Additionally, CF and GF filaments release microscopic fibers that can collect in your lungs. While filaments like Delrin and ABS are the worst and require special HEPA filters and sealed enclosures, you should still print all filaments in a well-ventilated area!!
+A few things to be aware of before selecting a material:
 
 - Filaments can be annealed. This is when they are heated for long periods of time over their glass transition temperature (Tg) and then allowed to cool slowly. This alters the crystallinity of the filament and reduces internal stresses, ultimately making it slightly stiffer and far more temperature resistant. For example, PLA’s softening temperature increases from 55ºC to nearly 140ºC. Additionally, with other materials like nylon, annealing can dramatically reduce its creep under load. Note that annealed parts may shrink significantly (several percent for PLA).
 - All filaments absorb moisture and should be kept dry. Moisture can lead to reduction in print quality due to bubbles forming where water is boiling, and the water reacting and breaking down the polymer. Some filaments do not absorb water, such as: PCTG, PP, PPS, or SEBS.
@@ -188,8 +188,6 @@ TPU-CF – Yes, this exists. Somehow increases both the tensile and impact stren
 Engineering Grade Filaments
 ---------------------------
 
-These are filaments for applications that demand more than common filaments can deliver.
-
 ASA (Acrylonitrile Styrene Acrylate)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -279,8 +277,8 @@ Recyclable in its pure form, but NOT as a CF blend. PET is used in printing prim
 | PET-CF  | XX-XX            | XXX-XXX             | XX-XX                |       |
 +---------+------------------+---------------------+----------------------+-------+
 
-Advanced/Niche Filaments - the Cool Kids' corner (or the "I hate myself" corner)
---------------------------------------------------------------------------------
+Advanced/Niche Filaments
+------------------------
 
 PCTG (Polycyclohexylenedimethylene Terephthalate Glycol-modified)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -301,16 +299,6 @@ POM (Acetal, Delrin, Polyoxymethylene)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A high-performance material used for low friction and high strength applications like gears. For printing, imagine ABS except low friction, higher stiffness, and formaldehyde instead of styrene. Pros: Stiff, tough, ultra-low friction. Cons: extremely difficult to print.
-
-Mechanical properties:
-
-- Tensile strength XY = 64MPa
-- Tensile strength Z = 45MPa
-- Impact strength = 80 kJ/m2
-- Heat deflection temperature (0.45MPa) = 142C
-- Heat deflection temperature (1.8Mpa) = 125c
-- Flexural modulus XY = 2700MPa
-- Density = 1.41 g/cm3
 
 PBT (Polybutylene Terephthalate)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
