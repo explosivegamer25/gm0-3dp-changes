@@ -43,7 +43,6 @@ If it is impossible for the part to have a flat side to print on, a simple solut
 
 .. image:: images/3d-printing/2-piece-gearbox.jpg
    :alt: A 3D printed gearbox, printed in 2 parts, cut along a plane
-   :scale: 25%
 
 .. tip:: Don't chamfer or round anything on the perimeter of the first layer on the bottom face of the part. Chamfering or rounding will increase the chances of the part warping, especially on unheated print plates.
 
@@ -63,11 +62,9 @@ The part could have been easily printed as a single part, but it would be fairly
 
 .. image:: images/3d-printing/printing-multipart.jpg
    :alt: A multipart assembly 3D printing
-   :scale: 25%
 
 .. image:: images/3d-printing/assembled-multipart.jpg
    :alt: An assembled version of what was printing in the previous image
-   :scale: 25%
 
 This assembly is a good example of considering part orientation, draft angles, and stress vectors in each part of the design. Complex parts can be made strong and without any support by simply splitting it up in the right way.
 
