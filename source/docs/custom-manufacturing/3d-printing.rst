@@ -130,43 +130,6 @@ In addition to the filaments mentioned in the tip above, we recommend using most
 Common Filaments
 ----------------
 
-+-------+------------------+-----------+-----------------------------+----------+------------+----------------------------+
-|       | Tensile Strength | Impact    | HDT (MPa)                   | Flex.    | Density    | Print Temp (\ |deg|\ C)    |
-|       +--------+---------+           +--------------+--------------+ Mod.     |            +-----------+----------------+
-|       | XY     | Z       |           | 0.45         | 1.8          |          |            | Bed       | Nozzle         |
-+=======+========+=========+===========+==============+==============+==========+============+===========+================+
-| PLA   | 55 MPa | 45 MPa  | 5 kJ/m²   | 57\ |deg|\ C | 52\ |deg|\ C | 2400 MPa | 1.24 g/cm³ | XX-XX     | XXX-XXX        |
-+-------+--------+---------+-----------+--------------+--------------+----------+------------+-----------+----------------+
-| PETG  | 41 MPa | 36 MPa  | 3.9 kJ/m² | 68\ |deg|\ C | 65\ |deg|\ C | 1700 MPa | 1.25 g/cm³ | XX-XX     | XXX-XXX        |
-+-------+--------+---------+-----------+--------------+--------------+----------+------------+-----------+----------------+
-| ABS   | 39 MPa | 35 MPa  | 30 kJ/m²  | 87\ |deg|\ C | 75\ |deg|\ C | 1700 MPa | 1.05 g/cm³ | XX-XX     | XXX-XXX        |
-+-------+--------+---------+-----------+--------------+--------------+----------+------------+-----------+----------------+
-| TPU   | 41 MPa | 24 MPa  | n/a       | 70\ |deg|\ C | 50\ |deg|\ C | n/a      | 1.25 g/cm³ | XX-XX     | XXX-XXX        |
-+-------+--------+---------+-----------+--------------+--------------+----------+------------+-----------+----------------+
-
-.. csv-table::
-    :header: "Material", "Tensile XY", "Tensile Z", "Impact", "Heat Deflection (0.45 MPa)", "Heat Deflection (1.8 MPa)", "Flexural Modulus", "Density"
-    :widths: 10, 14, 12, 14, 15, 15, 14, 15
-
-    "ASA", "41 MPa", "35 MPa", "40 kJ/m^2", "90\ |deg|\ C", "85\ |deg|\ C", "2060 MPa", "1.05 g/cm^3"
-    "PA6", "82 MPa", "18 MPa", "18 kJ/m^2", "180\ |deg|\ C", "165\ |deg|\ C", "7000 MPa", "1.16 g/cm^3"
-    "PA12", "78 MPa", "30 MPa", "16 kJ/m^2", "170\ |deg|\ C", "160\ |deg|\ C", "4000 MPa", "1.06 g/cm^3"
-    "PA11", "64 MPa", "no data", "17 kJ/m^2", "190\ |deg|\ C", "150\ |deg|\ C", "6000 MPa", "1.11 g/cm^3"
-    "PAHT", "80 MPa", "50 MPa", "9 kJ/m^2", "210\ |deg|\ C", "200\ |deg|\ C", "9520 MPa", "1.08 g/cm^3"
-    "PPA", "101 MPa", "22 MPa", "8 kJ/m^2", "227\ |deg|\ C", "N/A\ |deg|\ C", "9860 MPa", "1.25 g/cm^3"
-    "PC_Stiff", "70 MPa", "53 MPa", "4 kJ/m^2", "110\ |deg|\ C", "105\ |deg|\ C", "2650 MPa", "1.2 g/cm^3"
-    "PC_ABS", "58 MPa", "30 MPa", "120 kJ/m^2", "110\ |deg|\ C", "105\ |deg|\ C", "2000 MPa", "1.24 g/cm^3"
-    "PC_CF", "70 MPa", "no data", "17 kJ/m^2", "115\ |deg|\ C", "105\ |deg|\ C", "4200 MPa", "1.22 g/cm^3"
-    "PET_CF", "70 MPa", "35 MPa", "8 kJ/m^2", "205\ |deg|\ C", "180\ |deg|\ C", "5000 MPa", "1.24 g/cm^3"
-
-
-"PCTG", "50 MPa", "40 MPa", "10 kJ/m^2", "75\ |deg|\ C", "70\ |deg|\ C", "2040 MPa", "1.21 g/cm^3"
-"TPE_General", "15-30 MPa", "22 MPa", "N/A kJ/m^2", "N/A \ |deg|\ C", "N/A \ |deg|\ C", "N/A  MPa", "1.05-1.15 g/cm^3"
-"PP", "35 MPa", "35 MPa", "65 kJ/m^2", "80\ |deg|\ C", "65\ |deg|\ C", "800 MPa", "0.9 g/cm^3"
-"PEEK", "100 MPa", "15 MPa", "6 kJ/m^2", "140\ |deg|\ C", "n/a", "2700 MPa", "1.3 g/cm^3"
-"PEKK", "105 MPa", "30 MPa", "15 kJ/m^2", "150\ |deg|\ C", "n/a", "2680 MPa", "1.27 g/cm^3"
-"PEI_1010", "82 MPa", "29 MPa", "2 kJ/m^2", "208\ |deg|\ C", "n/a", "2150 MPa", "1.27 g/cm^3"
-"TPI", "72 MPa", "19 MPa", "n/a", "237\ |deg|\ C", "n/a\ |deg|\ C", "2150 MPa", "1.27 g/cm^3"
 
 PLA (Polylactic Acid)
 ^^^^^^^^^^^^^^^^^^^^^
@@ -180,30 +143,12 @@ PETG (Polyethylene Terephthalate Glycol)
 
 PETG is a glycol-modified PET to allow it to print easier. Despite being in the PET family, IT IS NOT RECYCLEABLE! Strengths: higher temperature resistance than PLA, is less brittle, low creep under small loads, dirt cheap, and good layer adhesion. Weaknesses: it’s slightly harder to print and is less stiff and strong.
 
-- Tensile strength XY = 41 MPa
-- Tensile strength Z = 36 MPa
-- Impact strength = 3.9 kJ/m2
-- Heat deflection temperature = 68ºC
-- Heat deflection temperature = 65ºC
-- Flexural modulus XY = 1700 MPa
-- Density = 1.25 g/cm3
-
 PETG-CF – can help with common issues printing PETG such as blobbing, sagging, and minor warping, as well as helping layer adhesion when printed at high temperatures.
 
 ABS (Acrylonitrile Butadiene Styrene)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The OG printer filament, commonly used in LEGOs and “cheap plastic” components. Strengths include higher temperature resistance, great toughness, and high print speed. Weaknesses include low strength/stiffness, varying layer adhesion due to warping, harder to print, and foul-smelling, toxic styrene fumes while printing.
-
-Mechanical properties:
-
-- Tensile strength XY = 39 MPa
-- Tensile strength Z = 35 MPa
-- Impact strength = 30 kJ/m2
-- Heat deflection temperature (0.45MPa) = 87ºC
-- Heat deflection temperature (1.8Mpa) = 75ºC
-- Flexural modulus XY = 1700 MPa
-- Density = 1.05 g/cm3
 
 ABS-CF/GF – Makes ABS stiffer (ruining its toughness), though helps reduce warping and increases temperature resistance. ABS-GF is more useful due to being less brittle.
 
@@ -212,35 +157,43 @@ TPU (Thermoplastic Polyurethane)
 
 A soft, flexible material that comes in many hardnesses for many applications. Most commonly in printing is the 95A durometer. Strengths include good strength, near perfect layer adhesion, flexibility, and because of the flexibility, theoretically infinitely high toughness. Weaknesses include difficulty of printing for many reasons and a disappointing lack of grippiness (it’s plastic, not rubber).
 
-Mechanical properties:
-
-- Tensile strength XY = 41MPa
-- Tensile strength Z = 24 MPa
-- Impact strength = N/A
-- Heat deflection temperature (0.45MPa): 70ºC
-- Heat deflection temperature (1.8MPa): 50ºC
-- Flexural modulus XY = N/A
-- Density = 1.25g/cm3
-
 TPU-CF – Yes, this exists. Somehow increases both the tensile and impact strength of TPU. Good for things like timing belts.
 
-Engineering Grade Filaments - "It Needs to be Strong"
------------------------------------------------------
++-------+------------------+-----------+-----------------------------+----------+------------+
+|       | Tensile Strength | Notched   | Heat Deflection             | Flexural | Density    |
+|       +--------+---------+ IZOD      +--------------+--------------+ Mod.     |            |
+|       | XY     | Z       |           | 0.45 MPa     | 1.8 MPa      |          |            |
++=======+========+=========+===========+==============+==============+==========+============+
+| PLA   | 55 MPa | 45 MPa  | 5 kJ/m²   | 57\ |deg|\ C | 52\ |deg|\ C | 2400 MPa | 1.24 g/cm³ |
++-------+--------+---------+-----------+--------------+--------------+----------+------------+
+| PETG  | 41 MPa | 36 MPa  | 3.9 kJ/m² | 68\ |deg|\ C | 65\ |deg|\ C | 1700 MPa | 1.25 g/cm³ |
++-------+--------+---------+-----------+--------------+--------------+----------+------------+
+| ABS   | 39 MPa | 35 MPa  | 30 kJ/m²  | 87\ |deg|\ C | 75\ |deg|\ C | 1700 MPa | 1.05 g/cm³ |
++-------+--------+---------+-----------+--------------+--------------+----------+------------+
+| TPU   | 41 MPa | 24 MPa  | n/a       | 70\ |deg|\ C | 50\ |deg|\ C | n/a      | 1.25 g/cm³ |
++-------+--------+---------+-----------+--------------+--------------+----------+------------+
+
++-------+------------------+---------------------+----------------------+-------+
+|       | Bed (\ |deg|\ C) | Nozzle (\ |deg|\ C) | Chamber (\ |deg|\ C) | Notes |
++=======+==================+=====================+======================+=======+
+| PLA   | XX-XX            | XXX-XXX             | XX-XX                |       |
++-------+------------------+---------------------+----------------------+-------+
+| PETG  | XX-XX            | XXX-XXX             | XX-XX                |       |
++-------+------------------+---------------------+----------------------+-------+
+| ABS   | XX-XX            | XXX-XXX             | XX-XX                |       |
++-------+------------------+---------------------+----------------------+-------+
+| TPU   | XX-XX            | XXX-XXX             | XX-XX                |       |
++-------+------------------+---------------------+----------------------+-------+
+
+Engineering Grade Filaments
+---------------------------
+
+These are filaments for applications that demand more than common filaments can deliver.
 
 ASA (Acrylonitrile Styrene Acrylate)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Used in the industry in medical facility pipes due to chemical resistance. Like ABS, but with the added benefit of chemical and UV resistance and less toxic fumes while printing.
-
-Mechanical properties:
-
-- Tensile strength XY = 41MPa
-- Tensile strength Z = 35MPa
-- Impact strength = 40 kJ/m2
-- Heat deflection temperature (0.45MPa) = 90ºC
-- Heat deflection temperature (1.8Mpa) = 85ºC
-- Flexural modulus XY = 2060MPa
-- Density = 1.05 g/cm3
 
 ASA-CF
 
@@ -251,66 +204,15 @@ Nylon is a strong, tough, and lightweight family of plastics used in almost ever
 Note – PA as a filament is usually, and is most useful, in the CF (carbon fiber) form. This is when small, chopped carbon fibers are added to increase strength, stiffness, and heat resistance. More on CF later. Beware that CF filaments are highly abrasive and require a hardened steel or gemstone nozzle. The following refer to PA-CF filaments:
 PA6 – the most common nylon type for all applications. It’s stiff, strong, tough, temperature resistant, lightweight, and has good layer adhesion. However, it is much more expensive, hard to print, and absorbs large amounts of moisture from the environment which can dramatically change its mechanical properties. IT MUST BE DRIED BEFORE PRINTING.
 
-Mechanical properties (dry):
-
-•	Tensile strength XY = 82 MPa
-•	Tensile strength Z = 18 MPa
-•	Impact strength = 18 kJ/m2
-•	Heat deflection temperature (0.45MPa) = 180C
-•	Heat deflection temperature (1.8Mpa) = 165C
-•	Flexural modulus XY = 7000 MPa
-•	Density = 1.16 g/cm3
-
 PA6,6 – Similar to PA6, except even stronger and stiffer, but is rare to find as a filament. Little data is available regarding 3D printed PA6,6.
 
 PA12 – The other most common form of nylon in 3D printing. Slightly weaker mechanical properties compared to PA6, but boasts lighter weight and much lower moisture absorption, making it better retain its properties under harsh chemical conditions.
 
-Mechanical properties:
-
-- Tensile strength XY = 78 MPa
-- Tensile strength Z = 30 MPa
-- Impact strength = 16 kJ/m2
-- Heat deflection temperature (0.45MPa) = 170C
-- Heat deflection temperature (1.8Mpa) = 160C
-- Flexural modulus XY = 4000 MPa
-- Density = 1.06 g/cm3
-
 PA11 – A naturally derived and renewable form of nylon. Like the ASA of nylons, it is more ductile, temperature resistant, and can handle UV and chemicals better compared to PA12.
-
-Mechanical properties:
-
-- Tensile strength XY = 64 MPa
-- Tensile strength Z = No data
-- Impact strength = 17 kJ/m2
-- Heat deflection temperature (0.45MPa) = 190ºC
-- Heat deflection temperature (1.8Mpa) = 150ºC
-- Flexural modulus XY = 6000 MPa
-- Density = 1.11 g/cm3
 
 PAHT – Usually a PA12 alloy designed for high temperatures. Its properties take the strengths of both PA6 and PA12 while eliminating the weaknesses. Excellent for all extremely demanding applications. Its weaknesses are price and printability. Due to high CF content, it has a sandpaper-like surface texture and thus has lower dimensional accuracy due to the rough surface.
 
-Mechanical properties:
-
-•	Tensile strength XY = 80 MPa
-•	Tensile strength Z = 50 MPa
-•	Impact strength = 9 kJ/m2
-•	Heat deflection temperature (0.45MPa) = 210C
-•	Heat deflection temperature (1.8Mpa) = 200C
-•	Flexural modulus XY = 9520 MPa
-•	Density = 1.08 g/cm3
-
 PPA – Nylon copolymer polyphthalamide. Typically used in the automotive industry for parts under extreme stress, heat, and chemicals. It is the strongest and stiffest filament printable on most consumer-grade printers. Its weaknesses are extremely high price and brittleness.
-
-Mechanical properties:
-
-•	Tensile strength XY = 101 MPa
-•	Tensile strength Z = 22 MPa
-•	Impact strength = 8 kJ/m2
-•	Heat deflection temperature (0.45MPa) = 227C
-•	Heat deflection temperature (1.8Mpa)
-•	Flexural modulus XY = 9860 MPa
-•	Density = 1.25 g/cm3
-
 
 PC (Polycarbonate)
 ^^^^^^^^^^^^^^^^^^
@@ -318,53 +220,64 @@ PC (Polycarbonate)
 Polycarbonate is most often used in sheet form, where it is used for greenhouse panels and things that require extreme toughness and high visual clarity such as bulletproof glass. PC filaments are excellent for structural components that need to take a beating, and applications requiring medium-high temperature resistance such as electronics housings. As a filament, it’s almost never in its pure form due to extreme difficulty of printing. As a result, we have categorized two main types of blends: “stiff” PC and “flexy” PC.
 “Stiff” PC: much closer to pure polycarbonate. Strengths include remarkably high strength (the highest of the common non-fiber filled filaments), good stiffness, high temperature resistance, and low creep. Weaknesses include brittleness, warping, and high print temperatures.
 
-Mechanical properties:
-
-- Tensile strength XY = 70 MPa
-- Tensile strength Z = 53 MPa
-- Impact strength = 4 kJ/m2
-- Heat deflection temperature (0.45MPa) = 110ºC
-- Heat deflection temperature (1.8Mpa) = 105ºC
-- Flexural modulus XY = 2650 MPa
-- Density = 1.2 g/cm3
-
 “Flexy” PC: Polycarbonate with additives such as PBT, ABS or PETG. Strengths include good strength, high temperature resistance, outstanding toughness, great layer adhesion due to increased flexibility, and less warping than pure PC. Weaknesses include high price, some warping, and lower stiffness.
 
-Mechanical properties (PC-ABS):
-
-- Tensile strength XY = 58 MPa
-- Tensile strength Z = 30 MPa
-- Impact strength = 120 kJ/m2
-- Heat deflection temperature (0.45MPa) = 110ºC
-- Heat deflection temperature (1.8Mpa) = 105ºC
-- Flexural modulus XY = 2000 MPa
-- Density = 1.24 g/cm3
-
 PC-CF – Takes brittle PC and makes it more brittle. However, it does increase strength and stiffness to an even higher level, rivaling PAHT-CF, PET-CF, and others. Also dramatically reduces warping and some creep at high temperatures that PC can experience.
-
-Mechanical properties:
-
-- Tensile strength XY = 70
-- Tensile strength Z = No data
-- Impact strength = 17 kJ/m2
-- Heat deflection temperature (0.45MPa) = 115ºC
-- Heat deflection temperature (1.8Mpa) = 105ºC
-- Flexural modulus XY = 4200 MPa
-- Density = 1.22 g/cm3
 
 PET-CF (Polyethylene Terephthalate)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Recyclable in its pure form, but NOT as a CF blend. PET is used in printing primarily in its CF form for incredible stiffness, temperature resistance and low moisture absorption compared to nylons. Weaknesses include brittleness, high cost, and high print temperatures at the limit of most consumer-grade printers.
 
-Mechanical properties:
-•	Tensile strength XY = 70 MPa
-•	Tensile strength Z = 35 MPa
-•	Impact strength = 8 kJ/m2
-•	Heat deflection temperature (Annealed) (0.45MPa) = 205ºC
-•	Heat deflection temperature (Annealed) (1.8Mpa) = 180ºC
-•	Flexural modulus XY = 5000 MPa
-•	Density = 1.24 g/cm3
++---------+------------------+-----------+------------------------------+----------+------------+
+|         | Tensile Strength | Notched   | Heat Deflection              | Flexural | Density    |
+|         +--------+---------+ IZOD      +---------------+--------------+ Mod.     |            |
+|         | XY     | Z       |           | 0.45 MPa      | 1.8 MPa      |          |            |
++=========+========+=========+===========+===============+==============+==========+============+
+| ASA     | 41 MPa | 35 MPa  | 40 kJ/m²  | 90\ |deg|\ C  | 85\ |deg|\ C | 2060 MPa | 1.05 g/cm³ |
++---------+--------+---------+-----------+---------------+--------------+----------+------------+
+| PA6-CF  | 82 MPa | 18 MPa  | 18 kJ/m²  | 180\ |deg|\ C | 165\ |deg|\ C| 7000 MPa | 1.16 g/cm³ |
++---------+--------+---------+-----------+---------------+--------------+----------+------------+
+| PA12-CF | 78 MPa | 30 MPa  | 16 kJ/m²  | 170\ |deg|\ C | 160\ |deg|\ C| 4000 MPa | 1.06 g/cm³ |
++---------+--------+---------+-----------+---------------+--------------+----------+------------+
+| PA11-CF | 64 MPa | no data | 17 kJ/m²  | 190\ |deg|\ C | 160\ |deg|\ C| 4000 MPa | 1.11 g/cm³ |
++---------+--------+---------+-----------+---------------+--------------+----------+------------+
+| PAHT    | 80 MPa | 50 MPa  | 9 kJ/m²   | 210\ |deg|\ C | 200\ |deg|\ C| 9520 MPa | 1.09 g/cm³ |
++---------+--------+---------+-----------+---------------+--------------+----------+------------+
+| PPA     | 101 MPa| 22 MPa  | 8 kJ/m²   | 227\ |deg|\ C | n/a          | 9860 MPa | 1.25 g/cm³ |
++---------+--------+---------+-----------+---------------+--------------+----------+------------+
+| Stiff PC| 70 MPa | 53 MPa  | 4 kJ/m²   | 110\ |deg|\ C | 105\ |deg|\ C| 2650 MPa | 1.2  g/cm³ |
++---------+--------+---------+-----------+---------------+--------------+----------+------------+
+| PC-ABS  | 58 MPa | 30 MPa  | 120 kJ/m² | 110\ |deg|\ C | 105\ |deg|\ C| 2000 MPa | 1.24 g/cm³ |
++---------+--------+---------+-----------+---------------+--------------+----------+------------+
+| PC-CF   | 70 MPa | no data | 17 kJ/m²  | 115\ |deg|\ C | 105\ |deg|\ C| 4200 MPa | 1.22 g/cm³ |
++---------+--------+---------+-----------+---------------+--------------+----------+------------+
+| PET-CF  | 70 MPa | 35 MPa  | 8 kJ/m²   | 205\ |deg|\ C | 180\ |deg|\ C| 5000 MPa | 1.24 g/cm³ |
++---------+--------+---------+-----------+---------------+--------------+----------+------------+
+
++---------+------------------+---------------------+----------------------+-------+
+|         | Bed (\ |deg|\ C) | Nozzle (\ |deg|\ C) | Chamber (\ |deg|\ C) | Notes |
++=========+==================+=====================+======================+=======+
+| ASA     | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------+------------------+---------------------+----------------------+-------+
+| PA6-CF  | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------+------------------+---------------------+----------------------+-------+
+| PA12-CF | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------+------------------+---------------------+----------------------+-------+
+| PA11-CF | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------+------------------+---------------------+----------------------+-------+
+| PAHT    | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------+------------------+---------------------+----------------------+-------+
+| PPA     | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------+------------------+---------------------+----------------------+-------+
+| Stiff PC| XX-XX            | XXX-XXX             | XX-XX                |       |
++---------+------------------+---------------------+----------------------+-------+
+| PC-ABS  | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------+------------------+---------------------+----------------------+-------+
+| PC-CF   | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------+------------------+---------------------+----------------------+-------+
+| PET-CF  | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------+------------------+---------------------+----------------------+-------+
 
 Advanced/Niche Filaments - the Cool Kids' corner (or the "I hate myself" corner)
 --------------------------------------------------------------------------------
@@ -374,45 +287,15 @@ PCTG (Polycyclohexylenedimethylene Terephthalate Glycol-modified)
 
 Like PETG, only superior in literally every aspect. Only weakness: it costs more and can be difficult to obtain. That said, as it hits the consumer market more, the price will go down, *wink* Memorize the chemical name to impress your friends.
 
-Mechanical properties:
-
-- Tensile strength XY = 50 MPa
-- Tensile strength Z = 40 MPa
-- Impact strength = 10 kJ/m2
-- Heat deflection temperature (0.45MPa) = 75ºC
-- Heat deflection temperature (1.8Mpa) = 70ºC
-- Flexural modulus XY = 2040 MPa
-- Density = 1.21 g/cm3
-
 TPEs (Thermoplastic Elastomers)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A broader category of flexible filaments (includes TPU). Other common TPEs are SBS, SEBS, and PEBA. SEBS, unlike TPU, is stretchy and grippy. PEBA is stronger than TPU and has a high coefficient of restitution, meaning that it bounces back very easily.
 
-Mechanical properties: (General ranges)
-
-- Tensile strength XY = 15-30MPa
-- Tensile strength Z = 22MPa
-- Impact strength = N/A
-- Heat deflection temperature (0.45MPa) = N/A
-- Heat deflection temperature (1.8Mpa) = N/A
-- Flexural modulus XY = N/A
-- Density = 1.05-1.15 g/cm3
-
 PP (WHAT? It’s Polypropylene)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 PP is a semi-flexible commodity plastic, known for its low density and exceptional chemical resistance. It’s used in food containers, ropes, and more. Advantages include ultra-low density, chemical resistance, exceptional layer adhesion, and zero moisture absorption. Disadvantages include bed adhesion (it requires a specialized print surface), warping and low strength/stiffness.
-
-Mechanical properties:
-
-- Tensile strength XY = 35MPa
-- Tensile strength Z = 35MPa
-- Impact strength = 65 kJ/m2
-- Heat deflection temperature (0.45MPa) = 80C
-- Heat deflection temperature (1.8Mpa) = 65C
-- Flexural modulus XY = 800MPa
-- Density 0.9 g/cm3
 
 POM (Acetal, Delrin, Polyoxymethylene)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -434,38 +317,48 @@ PBT (Polybutylene Terephthalate)
 
 Pure PBT is a semi-flexible, super tough material very similar to pure PA. Used most commonly for keycaps but also in many electronics components due to good electrical insulation properties. As a filament, the only one really available is PBT-GF20, which retains most of the same properties.
 
-Super Polymers – Just Use Metal.
---------------------------------
++---------------+---------------------+-----------+------------------------------+----------+-----------------+
+|               | Tensile Strength    | Notched   | Heat Deflection              | Flexural | Density         |
+|               +-----------+---------+ IZOD      +---------------+--------------+ Mod.     |                 |
+|               | XY        | Z       |           | 0.45 MPa      | 1.8 MPa      |          |                 |
++===============+===========+=========+===========+===============+==============+==========+=================+
+| PCTG          | 50 MPa    | 40 MPa  | 10 kJ/m²  | 75\ |deg|\ C  | 70\ |deg|\ C | 2040 MPa | 1.21 g/cm³      |
++---------------+-----------+---------+-----------+---------------+--------------+----------+-----------------+
+| General TPEs  | 15-30 MPa | 22 MPa  | n/a       | n/a           | n/a          | n/a      | 1.05-1.15 g/cm³ |
++---------------+-----------+---------+-----------+---------------+--------------+----------+-----------------+
+| PP            | 35 MPa    | 35 MPa  | 65 kJ/m²  | 80\ |deg|\ C  | 65\ |deg|\ C | 800 MPa  | 0.9 g/cm³       |
++---------------+-----------+---------+-----------+---------------+--------------+----------+-----------------+
+| POM           | 64 MPa    | 45 MPa  | 80 kJ/m²  | 142\ |deg|\ C | 125\ |deg|\ C| 2700 MPa | 1.41 g/cm³      |
++---------------+-----------+---------+-----------+---------------+--------------+----------+-----------------+
+| PBT           | ?? MPa    | ?? MPa  | ?? kJ/m²  | ??\ |deg|\ C  | ??\ |deg|\ C | ??? MPa  | ??? g/cm³       |
++---------------+-----------+---------+-----------+---------------+--------------+----------+-----------------+
+
++---------------+------------------+---------------------+----------------------+-------+
+|               | Bed (\ |deg|\ C) | Nozzle (\ |deg|\ C) | Chamber (\ |deg|\ C) | Notes |
++===============+==================+=====================+======================+=======+
+| PCTG          | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------------+------------------+---------------------+----------------------+-------+
+| General TPEs  | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------------+------------------+---------------------+----------------------+-------+
+| PP            | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------------+------------------+---------------------+----------------------+-------+
+| POM           | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------------+------------------+---------------------+----------------------+-------+
+| PBT           | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------------+------------------+---------------------+----------------------+-------+
+
+Super Polymers
+--------------
 
 PEEK (Polyether ether ketone)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Strongest of the extreme materials. In its crystalline form, it’s stiff, strong, tough, resists chemicals and temperatures over 250C, and is even self-extinguishing. It’s perfect, right? Yes, until you consider: PEEK costs $600 per kilo. PEEK requires a 400C+ hotend, 140C bed and a minimum 70C chamber. PEEK warps like crazy, prints at 40mm/s max, guzzles moisture, and in general is absolutely not worth it. But if you need strength, you need strength.
 
-Mechanical properties:
-
-- Tensile strength XY = 100 MPa
-- Tensile strength Z = 15 MPa
-- Impact strength = 6 kJ/m^2
-- Heat deflection temperature (0.45MPa) = 140C
-- Heat deflection temperature (1.8Mpa) =
-- Flexural modulus XY = 2700 MPa
-- Density = 1.3 g/cm^3
-
 PEKK (Polyether ketone ketone)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Like PEEK but prints much easier and is somehow even more expensive.
-
-Mechanical properties:
-
-- Tensile strength XY = 105 MPa
-- Tensile strength Z = 30 MPa
-- Impact strength = 15 kJ/m^2
-- Heat deflection temperature (0.45MPa) = 150C
-- Heat deflection temperature (1.8Mpa) =
-- Flexural modulus XY = 2680 MPa
-- Density = 1.27 g/cm^3
 
 PEI (Polyetherimide)
 ^^^^^^^^^^^^^^^^^^^^
@@ -476,29 +369,33 @@ PEI 9085 – use 1010 it’s better.
 
 PEI 1010 – extremely good at everything for the low price of $200/kilo.
 
-Mechanical properties:
-- Tensile strength XY = 82 MPa
-- Tensile strength Z = 29 MPa
-- Impact strength = 2 kJ/m2
-- Heat deflection temperature (0.45MPa) = 208C
-- Heat deflection temperature (1.8Mpa)
-- Flexural modulus XY = 2150 MPa
-- Density = 1.27 g/cm3
-
-
 TPI (Thermoplastic Polyimide)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you’re even considering this stuff, or anything past PPS for that matter, just use metal, please, for the love of goodness.
 
-Mechanical properties:
++---------------+---------------------+-----------+------------------------------+----------+-----------------+
+|               | Tensile Strength    | Notched   | Heat Deflection              | Flexural | Density         |
+|               +-----------+---------+ IZOD      +---------------+--------------+ Mod.     |                 |
+|               | XY        | Z       |           | 0.45 MPa      | 1.8 MPa      |          |                 |
++===============+===========+=========+===========+===============+==============+==========+=================+
+| PEEK          | 100 MPa   | 15 MPa  | 6 kJ/m²   | 140\ |deg|\ C | n/a          | 2700 MPa | 1.3 g/cm³       |
++---------------+-----------+---------+-----------+---------------+--------------+----------+-----------------+
+| PEKK          | 105 MPa   | 30 MPa  | 15 kJ/m²  | 150\ |deg|\ C | n/a          | 2680 MPa | 1.27 g/cm³      |
++---------------+-----------+---------+-----------+---------------+--------------+----------+-----------------+
+| PEI_1010      | 82 MPa    | 29 MPa  | 2 kJ/m²   | 208\ |deg|\ C | n/a          | 2150 MPa | 1.27 g/cm³      |
++---------------+-----------+---------+-----------+---------------+--------------+----------+-----------------+
+| TPI           | 72 MPa    | 19 MPa  | n/a       | 237\ |deg|\ C | n/a          | 2150 MPa | 1.27 g/cm³      |
++---------------+-----------+---------+-----------+---------------+--------------+----------+-----------------+
 
-- Tensile strength XY = 72 MPa
-- Tensile strength Z = 19 MPa
-- Impact strength = No data available
-- Heat deflection temperature (0.45MPa) = 237C
-- Heat deflection temperature (1.8Mpa)
-- Flexural modulus XY = 2150 MPa
-- Density = 1.27 g/cm3
-
-WE TAKE NO RESPONSIBILITY IN ANY PERSONAL HARM THAT MAY COME DUE TO THE USE OF THIS INFORMATION AS THE HOLY TRUTH OF THE UNIVERSE.
++---------------+------------------+---------------------+----------------------+-------+
+|               | Bed (\ |deg|\ C) | Nozzle (\ |deg|\ C) | Chamber (\ |deg|\ C) | Notes |
++===============+==================+=====================+======================+=======+
+| PEEK          | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------------+------------------+---------------------+----------------------+-------+
+| PEKK          | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------------+------------------+---------------------+----------------------+-------+
+| PEI_1010      | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------------+------------------+---------------------+----------------------+-------+
+| TPI           | XX-XX            | XXX-XXX             | XX-XX                |       |
++---------------+------------------+---------------------+----------------------+-------+
