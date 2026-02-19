@@ -26,6 +26,7 @@ Other Contributors
 - Arjun - FTC 9794 Wizards.exe
 - Baylor - FTC 10641 Atomic Gears
 - Cole - FTC 7548 SPAREPARTS
+- Colin - FTC 16750 TechnoTotes
 - Cooper - FTC 19458 Equilibrium.exe
 - David - FTC 2753 Team Overdrive
 - David - FTC 7236 Recharged Green
@@ -50,12 +51,15 @@ Other Contributors
 - Neo - FTC 6710 Sigmas
 - Oscar - FTC 6460 RoboWarriors
 - Peter - FTC 12533 Inception
+- Rylan - FTC 16750 TechnoTotes
 - Sam - FTC 2753 Team Overdrive
 - Shurik - FTC 4137 Islandbots mentor
 - Tom - FTC 3736 Serious Business
 - Tyler - FRC 3184 Blaze Robotics
 - Wes - FTC 3658 Bosons
 - Whimsy - FTC 8417 'Lectric Legends
+
+
 
 Hosting
 -------
