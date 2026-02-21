@@ -1,7 +1,13 @@
 .. include:: <isonum.txt>
 
+.. |nbhp| unicode:: U+2011
+.. nbhp stands for non-breaking hyphen: 'PLA\ |nbhp|\ CF' prevents PLA-CF from wrapping
+
+.. |ndash| unicode:: U+2013
+
 3D Printing
 ===========
+
 
 Kinds of 3D Printing
 --------------------
@@ -71,25 +77,23 @@ This assembly is a good example of considering part orientation, draft angles, a
 Material Selection
 ------------------
 
-.. warning:: All filaments decompose at high temperatures and release potentially harmful fumes. Some byproducts are more harmful than others. Additionally, CF and GF filaments release microscopic fibers that can collect in your lungs. While filaments like Delrin and ABS are the worst and require special HEPA filters and sealed enclosures, you should still print all filaments in a well-ventilated area!!
+.. warning:: All filaments decompose at high temperatures and release potentially harmful fumes. Some byproducts are more harmful than others. Additionally, CF and GF filaments release microscopic fibers that can collect in your lungs. While filaments like delrin and ABS are the worst and require special HEPA filters and sealed enclosures, you should still print all filaments in a well-ventilated area!!
 
 For the purposes of FTC, PLA and PETG are all you need about 90% of the time. Everything else in here is for reference if you need very specific properties or are looking into other projects. Though we do recommend swapping your PETG with PCTG.
 
 A few things to be aware of before selecting a material:
 
-- Filaments can be annealed. This is when they are heated for long periods of time over their glass transition temperature (Tg) and then allowed to cool slowly. This alters the crystallinity of the filament and reduces internal stresses, ultimately making it slightly stiffer and far more temperature resistant. For example, PLA’s softening temperature increases from 55ºC to nearly 140ºC. Additionally, with other materials like nylon, annealing can dramatically reduce its creep under load. Note that annealed parts may shrink significantly (several percent for PLA).
+- Filaments can be annealed. This is when they are heated for long periods of time over their glass transition temperature (T\ :sub:`g`\ ) and then allowed to cool slowly. This alters the crystallinity of the filament and reduces internal stresses, ultimately making it slightly stiffer and far more temperature resistant. For example, PLA’s softening temperature increases from 55ºC to nearly 140ºC. Additionally, with other materials like nylon, annealing can dramatically reduce its creep under load. Note that annealed parts may shrink significantly (several percent for PLA).
 - All filaments absorb moisture and should be kept dry. Moisture can lead to reduction in print quality due to bubbles forming where water is boiling, and the water reacting and breaking down the polymer. Some filaments do not absorb water, such as: PCTG, PP, PPS, or SEBS.
 
 .. admonition:: Fun fact
 
-    specifically in nylons, especially moisture-conditioned PA6 and PA6,6, water acts as a plasticizer and can make it upwards of ten times tougher but will nearly halve its tensile strength.
+    Specifically in nylons, especially moisture-conditioned PA6 and PA6,6, water acts as a plasticizer and can make it upwards of ten times tougher but will nearly halve its tensile strength.
 
 Fiber-filled filaments
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. |nbhp| unicode:: U+2011
-
-Materials ending in |nbhp|\ CF and |nbhp|\ GF are common composite materials in 3d printing. |nbhp|\ CF denotes the addition of carbon fibers to add stiffness, strength, and temperature resistance to a filament. Similarly |nbhp|\ GF filaments add glass fibers for the same reason. Such modifiers also help reduce warping.
+Materials ending in |nbhp|\ CF and |nbhp|\ GF are common composite materials in 3d printing. |nbhp|\ CF denotes the addition of carbon fibers to add stiffness, strength, and temperature resistance to a filament. Similarly |nbhp|\ GF filaments add glass fibers for the same reason. Such modifiers also help reduce warping. These filaments are highly abrasive and require a hardened steel or gemstone nozzle to print.
 
 .. warning:: Keep in mind that CF and GF filaments will claim to be tougher and have better layer adhesion. Know that **this is usually a lie** unless you print at least 10\ |deg| C above the recommended printing temperature, and even then, they’ll still be much more brittle.
 
@@ -99,19 +103,19 @@ Key differences
 - CF adds more stiffness, strength, and temperature resistance to the filament, but GF is typically less brittle than CF.
 - GF filaments can be colored with normal colors, while CF is stuck with the black CF in it, thus colored CF filaments appear darker and non-uniform in color (little specs of black are visible).
 
-A few rules of thumb and pinky, and miscellaneous tips
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+A few Rules of Thumb and Pinky
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 1. Stiffer = more brittle.
-2. Do research before printing a new filament. ESPECIALLY FLEXIBLES.
+2. Do research before printing a new filament. **Especially flexibles**.
 3. CF is stronger, GF is tougher (in relation to each other).
-4. If there’s little to no documentation for a filament, don’t use it. There’s a reason it’s not documented. Example: HDPE. I needn’t say more.
+4. If there’s little to no documentation for a filament, do not use it. There is a reason it is not documented; for example, HDPE, I needn’t say more.
 
 .. tip:: Expensive filament isn’t (usually) worth it. Avoid spending more than $40/kilo. Some cheap but high-performance filaments are:
 
-    * Elegoo PAHT-CF – $39.99 for 1 kg
-    * SUNLU PC-ABS – $39.99 for 1 kg
-    * Polymaker PLA blends (HT, Polymax) – $30-40 for 1 kg
-    * Pretty much any ASA – $20-35 for 1 kg
+    * Elegoo PAHT-CF |ndash| $39.99 for 1 kg
+    * SUNLU PC-ABS |ndash| $39.99 for 1 kg
+    * Polymaker PLA blends (HT, Polymax) |ndash| $30-40 for 1 kg
+    * Pretty much any ASA |ndash| $20-35 for 1 kg
 
 In addition to the filaments mentioned in the tip above, we recommend using most filaments from the following brands:
 
@@ -127,34 +131,33 @@ In addition to the filaments mentioned in the tip above, we recommend using most
 Common Filaments
 ----------------
 
+PLA
+^^^
 
-PLA (Polylactic Acid)
-^^^^^^^^^^^^^^^^^^^^^
+PLA (polylactic acid) is the most common printing plastic due to low cost and ease of printing. Contrary to popular belief, **it is not biodegradable**; however, it can be industrially composed in some facilities. Strengths: stiff, reasonably strong, easy to print, dirt cheap, and has good layer adhesion. Weaknesses: PLA has poor heat resistance, high creep even under small loads, and brittleness.
 
-PLA is the most common printing plastic due to low cost and ease of printing. Strengths: Stiff, reasonably strong, easy to print, dirt cheap, and has good layer adhesion. Weaknesses, PLA has poor heat resistance, high creep even under small loads, and brittleness.
+PLA-CF/GF |ndash| extremely brittle and actually weaker than regular PLA. Do not recommend.
 
-PLA-CF/GF – extremely brittle and actually weaker than regular PLA. Do not recommend.
+PETG
+^^^^
 
-PETG (Polyethylene Terephthalate Glycol)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PETG (polyethylene terephthalate glycol) is a glycol-modified PET to allow it to print easier. Despite being in the PET family, **it is not recyclable!** Strengths: higher temperature resistance than PLA, is less brittle, low creep under small loads, dirt cheap, and good layer adhesion. Weaknesses: it’s slightly harder to print and is less stiff and strong.
 
-PETG is a glycol-modified PET to allow it to print easier. Despite being in the PET family, IT IS NOT RECYCLEABLE! Strengths: higher temperature resistance than PLA, is less brittle, low creep under small loads, dirt cheap, and good layer adhesion. Weaknesses: it’s slightly harder to print and is less stiff and strong.
+PETG-CF |ndash| can help with common issues printing PETG such as blobbing, sagging, and minor warping, as well as helping layer adhesion when printed at high temperatures.
 
-PETG-CF – can help with common issues printing PETG such as blobbing, sagging, and minor warping, as well as helping layer adhesion when printed at high temperatures.
+ABS
+^^^
 
-ABS (Acrylonitrile Butadiene Styrene)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ABS (acrylonitrile butadiene styrene) is the OG printer filament, commonly used in LEGOs and “cheap plastic” components. Strengths: higher temperature resistance, great toughness, and high print speed. Weaknesses: low strength/stiffness, varying layer adhesion due to warping, harder to print, and foul-smelling, toxic styrene fumes while printing.
 
-The OG printer filament, commonly used in LEGOs and “cheap plastic” components. Strengths include higher temperature resistance, great toughness, and high print speed. Weaknesses include low strength/stiffness, varying layer adhesion due to warping, harder to print, and foul-smelling, toxic styrene fumes while printing.
+ABS-CF/GF |ndash| CF helps reduce warping but makes ABS stiffer (ruining its toughness). ABS-GF is more useful due to being less brittle.
 
-ABS-CF/GF – Makes ABS stiffer (ruining its toughness), though helps reduce warping and increases temperature resistance. ABS-GF is more useful due to being less brittle.
+TPU
+^^^
 
-TPU (Thermoplastic Polyurethane)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TPU (thermoplastic polyurethane) is a soft, flexible material that comes in many hardnesses (durometers) for many applications. Most commonly in printing is the 95A durometer. Strengths: good strength, near perfect layer adhesion, flexibility, and because of the flexibility, theoretically infinitely high toughness. Weaknesses: difficult to printing for many reasons and a disappointing lack of grippiness (it’s plastic, not rubber).
 
-A soft, flexible material that comes in many hardnesses for many applications. Most commonly in printing is the 95A durometer. Strengths include good strength, near perfect layer adhesion, flexibility, and because of the flexibility, theoretically infinitely high toughness. Weaknesses include difficulty of printing for many reasons and a disappointing lack of grippiness (it’s plastic, not rubber).
-
-TPU-CF – Yes, this exists. Somehow increases both the tensile and impact strength of TPU. Good for things like timing belts.
+TPU-CF |ndash| Yes, this exists. It increases both the tensile and impact strength of TPU, good for things like timing belts.
 
 +-------+------------------+-----------+-----------------------------+----------+------------+
 |       | Tensile Strength | Notched   | Heat Deflection             | Flexural | Density    |
@@ -170,59 +173,62 @@ TPU-CF – Yes, this exists. Somehow increases both the tensile and impact stren
 | TPU   | 41 MPa | 24 MPa  | n/a       | 70\ |deg|\ C | 50\ |deg|\ C | n/a      | 1.25 g/cm³ |
 +-------+--------+---------+-----------+--------------+--------------+----------+------------+
 
-+-------+------------------+---------------------+----------------------+-------+
-|       | Bed (\ |deg|\ C) | Nozzle (\ |deg|\ C) | Chamber (\ |deg|\ C) | Notes |
-+=======+==================+=====================+======================+=======+
-| PLA   | 0-70             | 190-230             | 20-30                |       |
-+-------+------------------+---------------------+----------------------+-------+
-| PETG  | 65-85            | 240-265             | 20-40                |       |
-+-------+------------------+---------------------+----------------------+-------+
-| ABS   | 85-105           | 245-270             | 35-50                |       |
-+-------+------------------+---------------------+----------------------+-------+
-| TPU   | 0-60             | 220-245             | 20-30                |       |
-+-------+------------------+---------------------+----------------------+-------+
++-------+------------------+---------------------+----------------------+
+|       | Bed (\ |deg|\ C) | Nozzle (\ |deg|\ C) | Chamber (\ |deg|\ C) |
++=======+==================+=====================+======================+
+| PLA   | 0-70             | 190-230             | 20-30                |
++-------+------------------+---------------------+----------------------+
+| PETG  | 65-85            | 240-265             | 20-40                |
++-------+------------------+---------------------+----------------------+
+| ABS   | 85-105           | 245-270             | 35-50                |
++-------+------------------+---------------------+----------------------+
+| TPU   | 0-60             | 220-245             | 20-30                |
++-------+------------------+---------------------+----------------------+
 
 Engineering Grade Filaments
 ---------------------------
 
-ASA (Acrylonitrile Styrene Acrylate)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ASA
+^^^
 
-Used in the industry in medical facility pipes due to chemical resistance. Like ABS, but with the added benefit of chemical and UV resistance and less toxic fumes while printing.
+ASA (acrylonitrile styrene acrylate) is used in the industry in medical facility pipes due to chemical resistance. Like ABS, but with the added benefit of chemical and UV resistance and less toxic fumes while printing.
 
-ASA-CF
+ASA\ |nbhp|\ CF |ndash| CF makes it too brittle, do not recommend.
 
-PA (Nylon, Polyamide)
-^^^^^^^^^^^^^^^^^^^^^
+PA
+^^
 
-Nylon is a strong, tough, and lightweight family of plastics used in almost every major industry due to a broad range of favorable properties – examples include everything from zip-ties to toothbrush bristles to fabrics to fuel tanks, gears, engine covers and much more.
-Note – PA as a filament is usually, and is most useful, in the CF (carbon fiber) form. This is when small, chopped carbon fibers are added to increase strength, stiffness, and heat resistance. More on CF later. Beware that CF filaments are highly abrasive and require a hardened steel or gemstone nozzle. The following refer to PA-CF filaments:
-PA6 – the most common nylon type for all applications. It’s stiff, strong, tough, temperature resistant, lightweight, and has good layer adhesion. However, it is much more expensive, hard to print, and absorbs large amounts of moisture from the environment which can dramatically change its mechanical properties. IT MUST BE DRIED BEFORE PRINTING.
+PA (polyamide, also known as nylon) is a strong, tough, and lightweight family of plastics used in almost every major industry due to a broad range of favorable properties. Examples include everything from zip-ties to toothbrush bristles to fabrics to fuel tanks, gears, engine covers and much more.
 
-PA6,6 – Similar to PA6, except even stronger and stiffer, but is rare to find as a filament. Little data is available regarding 3D printed PA6,6.
+.. Note::
+    We will be mostly referring to the CF versions of PA, this is the most common form of nylon filament. It offers superior mechanical and printing properties compared to regular nylon.
 
-PA12 – The other most common form of nylon in 3D printing. Slightly weaker mechanical properties compared to PA6, but boasts lighter weight and much lower moisture absorption, making it better retain its properties under harsh chemical conditions.
+PA6 |ndash| the most common nylon type for all applications. It’s stiff, strong, tough, temperature resistant, lightweight, and has good layer adhesion. However, it is much more expensive, hard to print, and absorbs large amounts of moisture from the environment which can dramatically change its mechanical properties. **it must be dried before printing**.
 
-PA11 – A naturally derived and renewable form of nylon. Like the ASA of nylons, it is more ductile, temperature resistant, and can handle UV and chemicals better compared to PA12.
+PA6,6 |ndash| Similar to PA6, except even stronger and stiffer, but is rare to find as a filament. Little data is available regarding 3D printed PA6,6.
 
-PAHT – Usually a PA12 alloy designed for high temperatures. Its properties take the strengths of both PA6 and PA12 while eliminating the weaknesses. Excellent for all extremely demanding applications. Its weaknesses are price and printability. Due to high CF content, it has a sandpaper-like surface texture and thus has lower dimensional accuracy due to the rough surface.
+PA12 |ndash| The other most common form of nylon in 3D printing. Slightly weaker mechanical properties compared to PA6, but boasts lighter weight and much lower moisture absorption, making it better retain its properties under harsh chemical conditions.
 
-PPA – Nylon copolymer polyphthalamide. Typically used in the automotive industry for parts under extreme stress, heat, and chemicals. It is the strongest and stiffest filament printable on most consumer-grade printers. Its weaknesses are extremely high price and brittleness.
+PA11 |ndash| A naturally derived and renewable form of nylon. Like the ASA of nylons, it is more ductile, temperature resistant, and can handle UV and chemicals better compared to PA12.
 
-PC (Polycarbonate)
-^^^^^^^^^^^^^^^^^^
+PAHT |ndash| Usually a PA12 alloy designed for high temperatures. Its properties take the strengths of both PA6 and PA12 while eliminating the weaknesses. Excellent for all extremely demanding applications. Its weaknesses are price and printability. Due to high CF content, it has a sandpaper-like surface texture and thus has lower dimensional accuracy due to the rough surface.
 
-Polycarbonate is most often used in sheet form, where it is used for greenhouse panels and things that require extreme toughness and high visual clarity such as bulletproof glass. PC filaments are excellent for structural components that need to take a beating, and applications requiring medium-high temperature resistance such as electronics housings. As a filament, it’s almost never in its pure form due to extreme difficulty of printing. As a result, we have categorized two main types of blends: “stiff” PC and “flexy” PC.
+PPA |ndash| Nylon copolymer polyphthalamide. Typically used in the automotive industry for parts under extreme stress, heat, and chemicals. It is the strongest and stiffest filament printable on most consumer-grade printers. Its weaknesses are extremely high price and brittleness.
+
+PC
+^^
+
+PC (polycarbonate) is most often used in sheet form, where it is used for greenhouse panels and things that require extreme toughness and high visual clarity such as bulletproof glass. PC filaments are excellent for structural components that need to take a beating, and applications requiring medium-high temperature resistance such as electronics housings. As a filament, it’s almost never in its pure form due to extreme difficulty of printing. As a result, we have categorized two main types of blends: “stiff” PC and “flexy” PC.
 “Stiff” PC: much closer to pure polycarbonate. Strengths include remarkably high strength (the highest of the common non-fiber filled filaments), good stiffness, high temperature resistance, and low creep. Weaknesses include brittleness, warping, and high print temperatures.
 
 “Flexy” PC: Polycarbonate with additives such as PBT, ABS or PETG. Strengths include good strength, high temperature resistance, outstanding toughness, great layer adhesion due to increased flexibility, and less warping than pure PC. Weaknesses include high price, some warping, and lower stiffness.
 
-PC-CF – Takes brittle PC and makes it more brittle. However, it does increase strength and stiffness to an even higher level, rivaling PAHT-CF, PET-CF, and others. Also dramatically reduces warping and some creep at high temperatures that PC can experience.
+PC\ |nbhp|\ CF |ndash| Takes brittle PC and makes it more brittle. However, it does increase strength and stiffness to an even higher level, rivaling PAHT-CF, PET-CF, and others. Also dramatically reduces warping and some creep at high temperatures that PC can experience.
 
-PET-CF (Polyethylene Terephthalate)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PET\ |nbhp|\ CF
+^^^^^^
 
-Recyclable in its pure form, but NOT as a CF blend. PET is used in printing primarily in its CF form for incredible stiffness, temperature resistance and low moisture absorption compared to nylons. Weaknesses include brittleness, high cost, and high print temperatures at the limit of most consumer-grade printers.
+PET (polyethylene terephthalate) is recyclable in its pure form, **but not as a CF blend.** PET is used in printing primarily in its CF form for incredible stiffness, temperature resistance and low moisture absorption compared to nylons. Weaknesses include brittleness, high cost, and high print temperatures at the limit of most consumer-grade printers.
 
 +---------+------------------+-----------+------------------------------+----------+------------+
 |         | Tensile Strength | Notched   | Heat Deflection              | Flexural | Density    |
@@ -250,57 +256,60 @@ Recyclable in its pure form, but NOT as a CF blend. PET is used in printing prim
 | PET-CF  | 70 MPa | 35 MPa  | 8 kJ/m²   | 205\ |deg|\ C | 180\ |deg|\ C| 5000 MPa | 1.24 g/cm³ |
 +---------+--------+---------+-----------+---------------+--------------+----------+------------+
 
-+---------+------------------+---------------------+----------------------+-------+
-|         | Bed (\ |deg|\ C) | Nozzle (\ |deg|\ C) | Chamber (\ |deg|\ C) | Notes |
-+=========+==================+=====================+======================+=======+
-| ASA     | 90-115           | 250-275             | 40-55                |       |
-+---------+------------------+---------------------+----------------------+-------+
-| PA6-CF  | 40-80            | 255-295             | 35-55                |       |
-+---------+------------------+---------------------+----------------------+-------+
-| PA12-CF | 40-80            | 265-295             | 35-55                |       |
-+---------+------------------+---------------------+----------------------+-------+
-| PA11-CF | 40-80            | 265-295             | 35-55                |       |
-+---------+------------------+---------------------+----------------------+-------+
-| PAHT-CF | 80-120           | 285-320             | XX-XX                |       |
-+---------+------------------+---------------------+----------------------+-------+
-| PPA-CF  | 100-125          | 280-315             | 40-65                |       |
-+---------+------------------+---------------------+----------------------+-------+
-| Stiff PC| 110-135          | 275-305             | 55-90                |       |
-+---------+------------------+---------------------+----------------------+-------+
-| PC-ABS  | 110-125          | 270-295             | 50-80                |       |
-+---------+------------------+---------------------+----------------------+-------+
-| PC-CF   | 100-120          | 275-305             | 40-65                |       |
-+---------+------------------+---------------------+----------------------+-------+
-| PET-CF  | 80-100           | 260-290             | 40-55                |       |
-+---------+------------------+---------------------+----------------------+-------+
++---------+------------------+---------------------+----------------------+
+|         | Bed (\ |deg|\ C) | Nozzle (\ |deg|\ C) | Chamber (\ |deg|\ C) |
++=========+==================+=====================+======================+
+| ASA     | 90-115           | 250-275             | 40-55                |
++---------+------------------+---------------------+----------------------+
+| PA6-CF  | 40-80            | 255-295             | 35-55                |
++---------+------------------+---------------------+----------------------+
+| PA12-CF | 40-80            | 265-295             | 35-55                |
++---------+------------------+---------------------+----------------------+
+| PA11-CF | 40-80            | 265-295             | 35-55                |
++---------+------------------+---------------------+----------------------+
+| PAHT-CF | 80-120           | 285-320             | 45-65                |
++---------+------------------+---------------------+----------------------+
+| PPA-CF  | 100-125          | 280-315             | 40-65                |
++---------+------------------+---------------------+----------------------+
+| Stiff PC| 110-135          | 275-305             | 55-90                |
++---------+------------------+---------------------+----------------------+
+| PC-ABS  | 110-125          | 270-295             | 50-80                |
++---------+------------------+---------------------+----------------------+
+| PC-CF   | 100-120          | 275-305             | 40-65                |
++---------+------------------+---------------------+----------------------+
+| PET-CF  | 80-100           | 260-290             | 40-55                |
++---------+------------------+---------------------+----------------------+
 
 Advanced/Niche Filaments
 ------------------------
 
-PCTG (Polycyclohexylenedimethylene Terephthalate Glycol-modified)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PCTG
+^^^^
 
-Like PETG, only superior in literally every aspect. Only weakness: it costs more and can be difficult to obtain. That said, as it hits the consumer market more, the price will go down, *wink* Memorize the chemical name to impress your friends.
+PCTG (polycyclohexylenedimethylene terephthalate glycol-modified) can be thought of as a superior PETG. It has better flexibility, durability, and printability. It is also more resistant to wrapping and absorbs less water than PETG. However, it costs more and is more difficult to obtain, but prices could go down as adoption increases.
 
-TPEs (Thermoplastic Elastomers)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TPEs
+^^^^
 
-A broader category of flexible filaments (includes TPU). Other common TPEs are SBS, SEBS, and PEBA. SEBS, unlike TPU, is stretchy and grippy. PEBA is stronger than TPU and has a high coefficient of restitution, meaning that it bounces back very easily.
+TPEs (thermoplastic elastomers) are a broad category of flexible filaments (includes TPU). Other common TPEs are SBS, SEBS, and PEBA. SEBS, unlike TPU, is stretchy and grippy. PEBA is stronger than TPU and has a high coefficient of restitution, meaning that it bounces back very easily.
 
-PP (WHAT? It’s Polypropylene)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PP
+^^
 
-PP is a semi-flexible commodity plastic, known for its low density and exceptional chemical resistance. It’s used in food containers, ropes, and your mom. Advantages include ultra-low density, chemical resistance, exceptional layer adhesion, and zero moisture absorption. Disadvantages include bed adhesion (it requires a specialized print surface), warping and low strength/stiffness.
+.. Note::
+    PP is *polypropylene*, not be to confused with other definitions.
 
-POM (Acetal, Delrin, Polyoxymethylene)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PP is a semi-flexible commodity plastic, known for its low density and exceptional chemical resistance. It’s used in food containers and ropes. Advantages include ultra-low density, chemical resistance, exceptional layer adhesion, and zero moisture absorption. Disadvantages include bed adhesion (it requires a specialized print surface), warping and low strength/stiffness.
 
-A high-performance material used for low friction and high strength applications like gears. For printing, imagine ABS except low friction, higher stiffness, and formaldehyde instead of styrene. Pros: Stiff, tough, ultra-low friction. Cons: extremely difficult to print.
+POM
+^^^
 
-PBT (Polybutylene Terephthalate)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+POM (acetal, delrin, polyoxymethylene) is a high-performance material used for low friction and high strength applications like gears. For printing, imagine ABS except low friction, higher stiffness, and formaldehyde instead of styrene. Advantages: stiff, tough, ultra-low friction. Disadvantages: extremely difficult to print.
 
-Pure PBT is a semi-flexible, super tough material very similar to pure PA. Used most commonly for keycaps but also in many electronics components due to good electrical insulation properties. As a filament, the only one really available is PBT-GF20, which retains most of the same properties.
+PBT
+^^^
+
+Pure PBT (polybutylene terephthalate) is a semi-flexible, super tough material very similar to pure PA. Used most commonly for keycaps but also in many electronics components due to good electrical insulation properties. As a filament, the only one really available is PBT-GF20, which retains most of the same properties.
 
 +---------------+---------------------+-----------+------------------------------+----------+-----------------+
 |               | Tensile Strength    | Notched   | Heat Deflection              | Flexural | Density         |
@@ -317,45 +326,45 @@ Pure PBT is a semi-flexible, super tough material very similar to pure PA. Used 
 +---------------+-----------+---------+-----------+---------------+--------------+----------+-----------------+
 
 
-+---------------+------------------+---------------------+----------------------+-------+
-|               | Bed (\ |deg|\ C) | Nozzle (\ |deg|\ C) | Chamber (\ |deg|\ C) | Notes |
-+===============+==================+=====================+======================+=======+
-| PCTG          | 75-85            | 250-265             | 25-45                |       |
-+---------------+------------------+---------------------+----------------------+-------+
-| General TPEs  | 40-80            | 210-260             | 20-35                |       |
-+---------------+------------------+---------------------+----------------------+-------+
-| PP            | 60-90            | 215-240             | 40-55                |       |
-+---------------+------------------+---------------------+----------------------+-------+
-| POM           | 100-130          | 210-220             | 30-55                 |       |
-+---------------+------------------+---------------------+----------------------+-------+
++---------------+------------------+---------------------+----------------------+
+|               | Bed (\ |deg|\ C) | Nozzle (\ |deg|\ C) | Chamber (\ |deg|\ C) |
++===============+==================+=====================+======================+
+| PCTG          | 75-85            | 250-265             | 25-45                |
++---------------+------------------+---------------------+----------------------+
+| General TPEs  | 40-80            | 210-260             | 20-35                |
++---------------+------------------+---------------------+----------------------+
+| PP            | 60-90            | 215-240             | 40-55                |
++---------------+------------------+---------------------+----------------------+
+| POM           | 100-130          | 210-220             | 30-55                |
++---------------+------------------+---------------------+----------------------+
 
 
 Super Polymers
 --------------
 
-PEEK (Polyether ether ketone)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PEEK
+^^^^
 
-Strongest of the extreme materials. In its crystalline form, it’s stiff, strong, tough, resists chemicals and temperatures over 250C, and is even self-extinguishing. It’s perfect, right? Yes, until you consider: PEEK costs $600 per kilo. PEEK requires a 400C+ hotend, 140C bed and a minimum 70C chamber. PEEK warps like crazy, prints at 40mm/s max, guzzles moisture, and in general is absolutely not worth it. But if you need strength, you need strength.
+PEEK (polyether ether ketone) is the strongest of the extreme materials. In its crystalline form, it’s stiff, strong, tough, resists chemicals and temperatures over 250\ |deg|\ C, and is even self-extinguishing. It’s perfect, right? Yes, until you consider: PEEK costs $600 per kilo. PEEK requires a 400\ |deg|\ C+ hotend, 140\ |deg|\ C bed and a minimum 70\ |deg|\ C chamber. PEEK warps like crazy, prints at 40mm/s max, guzzles moisture, and in general is absolutely not worth it. But if you need strength, you need strength.
 
-PEKK (Polyether ketone ketone)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PEKK
+^^^^
 
-Like PEEK but prints much easier and is somehow even more expensive.
+PEKK (polyether ketone ketone) is like PEEK but prints much easier and is somehow even more expensive.
 
-PEI (Polyetherimide)
-^^^^^^^^^^^^^^^^^^^^
+PEI
+^^^
 
-Designed solely for the aerospace industry but somehow ended up on your print bed as well.
+PEI (polyetherimide) is designed solely for the aerospace industry but somehow ended up on your print bed as well.
 
-PEI 9085 – use 1010 it’s better.
+PEI 9085 |ndash| use 1010 it’s better.
 
-PEI 1010 – extremely good at everything for the low price of $200/kilo.
+PEI 1010 |ndash| extremely good at everything for the low price of $200/kilo.
 
-TPI (Thermoplastic Polyimide)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TPI
+^^^
 
-If you’re even considering this stuff, or anything past PPS for that matter, just use metal, please, for the love of goodness.
+TPI (thermoplastic polyimide) is strong and has incredible high temperature performance. If you’re even considering this stuff, or anything past PPS for that matter, just use metal, please, for the love of goodness.
 
 +---------------+---------------------+-----------+------------------------------+----------+-----------------+
 |               | Tensile Strength    | Notched   | Heat Deflection              | Flexural | Density         |
@@ -371,14 +380,14 @@ If you’re even considering this stuff, or anything past PPS for that matter, j
 | TPI           | 72 MPa    | 19 MPa  | n/a       | 237\ |deg|\ C | n/a          | 2150 MPa | 1.27 g/cm³      |
 +---------------+-----------+---------+-----------+---------------+--------------+----------+-----------------+
 
-+---------------+------------------+---------------------+----------------------+-------+
-|               | Bed (\ |deg|\ C) | Nozzle (\ |deg|\ C) | Chamber (\ |deg|\ C) | Notes |
-+===============+==================+=====================+======================+=======+
-| PEEK          | 130-145          | 375-410             | 70-140               |       |
-+---------------+------------------+---------------------+----------------------+-------+
-| PEKK          | 120-140          | 345-375             | 70-150               |       |
-+---------------+------------------+---------------------+----------------------+-------+
-| PEI_1010      | 120-160          | 370-390             | 70-110               |       |
-+---------------+------------------+---------------------+----------------------+-------+
-| TPI           | 180-220          | 420-445             | 80-160               |       |
-+---------------+------------------+---------------------+----------------------+-------+
++---------------+------------------+---------------------+----------------------+
+|               | Bed (\ |deg|\ C) | Nozzle (\ |deg|\ C) | Chamber (\ |deg|\ C) |
++===============+==================+=====================+======================+
+| PEEK          | 130-145          | 375-410             | 70-140               |
++---------------+------------------+---------------------+----------------------+
+| PEKK          | 120-140          | 345-375             | 70-150               |
++---------------+------------------+---------------------+----------------------+
+| PEI_1010      | 120-160          | 370-390             | 70-110               |
++---------------+------------------+---------------------+----------------------+
+| TPI           | 180-220          | 420-445             | 80-160               |
++---------------+------------------+---------------------+----------------------+
