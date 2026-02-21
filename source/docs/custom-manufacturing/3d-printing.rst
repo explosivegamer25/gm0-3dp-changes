@@ -87,7 +87,7 @@ For the purposes of FTC, PLA and PETG are all you need about 90% of the time. Ev
 
 A few things to be aware of before selecting a material:
 
-- Filaments can be annealed. This is when they are heated for long periods of time over their glass transition temperature (T\ :sub:`g`\ ) and then allowed to cool slowly. This alters the crystallinity of the filament and reduces internal stresses, ultimately making it slightly stiffer and far more temperature resistant. For example, PLA’s softening temperature increases from 55\ |deg|\ C to nearly 140\ |deg|\ C. Additionally, with other materials like nylon, annealing can dramatically reduce its creep under load. Note that annealed parts may shrink significantly (several percent for PLA).
+- Filaments can be annealed. This is when they are heated for long periods of time over their glass transition temperature (T\ :sub:`g`\ ) and then allowed to cool slowly. This alters the crystallinity of the filament and reduces internal stresses, ultimately making it slightly stiffer and far more temperature resistant. For example, PLA's softening temperature increases from 55\ |deg|\ C to nearly 140\ |deg|\ C. Additionally, with other materials like nylon, annealing can dramatically reduce its creep under load. Note that annealed parts may shrink significantly (several percent for PLA).
 - All filaments absorb moisture and should be kept dry. Moisture can lead to reduction in print quality due to bubbles forming where water is boiling, and the water reacting and breaking down the polymer. Some filaments do not absorb water, such as: PCTG, PP, PPS, or SEBS.
 
 .. admonition:: Fun fact
